@@ -172,7 +172,7 @@ static void print_page_header ( FILE *out, gboolean black_bg )
     fprintf ( out, "  <title>%s</title>\n", title );
     fprintf ( out, "  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>\n" );
     if ( black_bg ) {
-        fprintf ( out, "  <style>html { background: black; color: white; }</style>\n" );
+        fprintf ( out, "  <style>html { background: %s; color: %s; }</style>\n", colors[0], colors[7] );
     }
     fprintf ( out, " </head>\n <body>\n" );
 }
